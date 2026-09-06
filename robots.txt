@@ -1,0 +1,29 @@
+# 기본: 모두 허용. 아래 AI 봇들도 명시적으로 허용해 검색·인용 경로를 열어 둡니다.
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# --- 검색·인용용 AI 봇 (실시간 답변에 우리 글을 인용하는 경로) ---
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# --- 학습용 AI 봇 (허용 여부는 본인 선택. 막고 싶으면 Allow 를 Disallow 로) ---
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Vercel 주소 확정 후 아래 도메인을 바꿉니다
+Sitemap: https://YOUR-DOMAIN.vercel.app/sitemap.xml
