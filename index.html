@@ -5,23 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ============================================================
-     ★ 여기만 바꾸세요 (1단계) ★
-     아래 [대괄호] 안의 값을 본인 정보로 바꿉니다. 나머지는 건드리지 않아도 됩니다.
-     YOUR-DOMAIN.vercel.app 은 Vercel 배포 후 받은 주소로 바꿉니다 (Ctrl+F 로 찾기).
+     ★ 배포 전 바꿀 것 ★
+     1) YOUR-DOMAIN.vercel.app → 실제 배포 주소 (Ctrl+F 로 전부 찾기)
+     2) assets/ 폴더(로고·사진·파비콘)를 index.html 과 같은 위치에 둘 것
      ============================================================ -->
-<title>홍길동 공인노무사 | 서울 마포 노무법인 예시 | 임금·해고·산재 상담</title>
-<meta name="description" content="홍길동 공인노무사(노무법인 예시, 서울 마포). 임금체불·부당해고·산재보상·직장 내 괴롭힘 상담. 첫 문단에서 결론을 드리는 노무사입니다.">
+<title>노무법인 전승 | 천안·충남 노무사 | 인사노무 자문·산업안전·산재보상</title>
+<meta name="description" content="노무법인 전승(대표 전지나 공인노무사, 충남 천안). 기업 인사노무 자문, 산업안전·중대재해 예방 컨설팅, 재해 근로자 산재보상. 천안·아산을 중심으로 전국 대응. 041-417-1915">
 <link rel="canonical" href="https://YOUR-DOMAIN.vercel.app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="홍길동 공인노무사 | 서울 마포 노무법인 예시">
-<meta property="og:description" content="임금체불·부당해고·산재보상·직장 내 괴롭힘 상담. 서울 마포 공인노무사.">
+<meta property="og:site_name" content="노무법인 전승">
+<meta property="og:title" content="노무법인 전승 | 천안·충남 노무사">
+<meta property="og:description" content="기업 인사노무 자문, 산업안전·중대재해 예방, 산재보상. 충남 천안의 노무법인.">
 <meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/">
 <meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
 <!-- 구글 서치콘솔 HTML 태그 인증: 발급받은 한 줄을 아래 주석 자리에 붙입니다 -->
 <!-- <meta name="google-site-verification" content="여기에_구글이_준_값"> -->
 <!-- 네이버 서치어드바이저 HTML 태그 인증 -->
 <!-- <meta name="naver-site-verification" content="여기에_네이버가_준_값"> -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231C5568'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif'%3E노%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/favicon.png">
 
 <!-- 보이지 않는 명함: 검색엔진과 AI가 읽는 구조화 데이터 (JSON-LD) -->
 <script type="application/ld+json">
@@ -31,42 +33,56 @@
     {
       "@type": "Person",
       "@id": "https://YOUR-DOMAIN.vercel.app/#person",
-      "name": "홍길동",
-      "jobTitle": "공인노무사",
-      "description": "서울 마포에서 임금·해고·산재·직장 내 괴롭힘 사건을 다루는 공인노무사.",
+      "name": "전지나",
+      "jobTitle": "대표 공인노무사",
+      "description": "노무법인 전승 대표 공인노무사. 기업 인사노무 자문과 산업안전·중대재해 예방 컨설팅, 산업재해 보상을 주로 수행한다.",
       "url": "https://YOUR-DOMAIN.vercel.app/",
+      "image": "https://YOUR-DOMAIN.vercel.app/assets/jeonjina.png",
       "worksFor": { "@id": "https://YOUR-DOMAIN.vercel.app/#org" },
-      "knowsAbout": ["임금체불", "부당해고", "산업재해보상", "직장 내 괴롭힘", "취업규칙"],
-      "areaServed": ["서울특별시", "마포구"],
-      "sameAs": [
-        "https://blog.naver.com/[네이버블로그ID]",
-        "https://www.linkedin.com/in/[링크드인ID]"
-      ]
+      "knowsAbout": ["인사노무 자문", "산업안전보건", "중대재해처벌법", "위험성평가", "산업재해보상", "직장 내 괴롭힘", "부당해고", "임금체불", "취업규칙"],
+      "areaServed": ["충청남도", "천안시", "아산시", "대한민국"]
     },
     {
-      "@type": ["LegalService", "Organization"],
+      "@type": ["LegalService", "ProfessionalService", "Organization"],
       "@id": "https://YOUR-DOMAIN.vercel.app/#org",
-      "name": "노무법인 예시",
+      "name": "노무법인 전승",
       "url": "https://YOUR-DOMAIN.vercel.app/",
-      "telephone": "+82-2-000-0000",
-      "email": "hello@example.com",
+      "logo": "https://YOUR-DOMAIN.vercel.app/assets/logo.png",
+      "telephone": "+82-41-417-1915",
+      "faxNumber": "+82-41-417-1916",
+      "foundingDate": "2021",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[도로명 주소]",
-        "addressLocality": "마포구",
-        "addressRegion": "서울특별시",
-        "postalCode": "[우편번호]",
+        "streetAddress": "동남구 청수9로 1, 7층 703호 (청당동, 청오법조빌딩)",
+        "addressLocality": "천안시",
+        "addressRegion": "충청남도",
         "addressCountry": "KR"
       },
-      "areaServed": ["서울특별시", "마포구"],
+      "areaServed": ["충청남도", "천안시", "아산시", "서울특별시", "경기도", "대한민국"],
       "founder": { "@id": "https://YOUR-DOMAIN.vercel.app/#person" },
-      "openingHours": "Mo-Fr 09:00-18:00"
+      "employee": { "@id": "https://YOUR-DOMAIN.vercel.app/#person" },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "업무분야",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "산업안전·중대재해 예방 컨설팅" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "기업 인사·노무 자문" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "급여 아웃소싱" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "노동위원회·노동청 사건 대리" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "직장 내 괴롭힘 조사·대응" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HR컨설팅" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "위험성평가 컨설팅" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "산업재해 보상" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "노동법 교육 출강" } }
+        ]
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://YOUR-DOMAIN.vercel.app/#website",
       "url": "https://YOUR-DOMAIN.vercel.app/",
-      "name": "홍길동 공인노무사",
+      "name": "노무법인 전승",
       "inLanguage": "ko",
       "publisher": { "@id": "https://YOUR-DOMAIN.vercel.app/#org" }
     },
@@ -76,18 +92,23 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "임금체불을 당했는데 무엇부터 해야 하나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "먼저 근로계약서, 급여명세서, 출퇴근 기록, 미지급 내역을 모으십니다. 그 다음 사업주에게 지급을 요구한 기록(문자·메일)을 남기고, 해결되지 않으면 관할 고용노동청에 임금체불 진정을 제출합니다. 퇴직 후라면 14일이 지난 시점부터 진정이 가능합니다." }
+          "name": "직원 10명 규모 회사인데, 노무사 자문이 꼭 필요한가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "상시근로자 5인 이상이면 근로기준법의 대부분이 적용됩니다. 해고 제한, 연장근로 한도, 연차휴가 부여 의무가 이때부터 발생합니다. 분쟁이 생긴 뒤에 드는 대응 비용은 예방 자문 비용을 크게 웃도는 경우가 많아, 10인 규모라면 월 자문으로 상시 관리하는 편이 일반적입니다." }
         },
         {
           "@type": "Question",
-          "name": "부당해고 구제신청은 언제까지 해야 하나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "해고가 있었던 날부터 3개월 이내에 관할 지방노동위원회에 구제신청을 해야 합니다. 기간을 넘기면 노동위원회 구제는 어려워지므로 해고 통보를 받은 즉시 날짜를 기록해 두십시오." }
+          "name": "산재 신청은 회사가 해주는 것 아닌가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "아닙니다. 산재 신청의 주체는 재해를 입은 근로자 본인입니다. 회사의 동의나 확인 없이도 근로복지공단에 직접 신청할 수 있고, 회사가 협조하지 않아도 신청은 가능합니다. 다만 이런 경우에는 재해 경위를 뒷받침할 자료를 어떻게 갖추느냐가 결과를 좌우합니다." }
         },
         {
           "@type": "Question",
-          "name": "상담은 어떻게 신청하나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "이 페이지 아래 상담 신청 폼에 이름, 연락처, 상담 분야, 내용을 남기시면 영업일 기준 1일 이내에 연락드립니다. 급한 사안은 전화로 문의해 주십시오." }
+          "name": "중대재해처벌법은 우리 회사에도 적용되나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "2024년 1월부터 상시근로자 5인 이상 모든 사업장으로 적용이 확대되었습니다. 업종과 관계없이 안전보건관리체계를 갖출 의무가 있으며, 이를 이행하지 않은 상태에서 중대재해가 발생하면 경영책임자가 처벌 대상이 될 수 있습니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "상담 비용은 어떻게 되나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "첫 전화 상담이나 방문 상담에서 사건의 방향과 예상 비용을 먼저 안내합니다. 자문계약과 사건위임 비용 기준은 상담 자리에서 그대로 설명드립니다." }
         }
       ]
     }
@@ -95,96 +116,332 @@
 }
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;600&display=swap" rel="stylesheet">
+
 <style>
-  :root { --navy:#1C5568; --ink:#1C353B; --sub:#5b6770; --bg:#F5F8FA; --card:#fff; --line:#dde5ea; --accent:#185D74; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; }
-  header { background:var(--navy); color:#fff; padding:56px 20px 48px; text-align:center; }
-  header .pill { display:inline-block; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); padding:6px 14px; border-radius:999px; font-size:14px; letter-spacing:.02em; }
-  header h1 { font-size:clamp(26px, 4.5vw, 40px); margin:18px 0 8px; line-height:1.25; }
-  header p.lead { font-size:clamp(16px, 2.2vw, 19px); opacity:.92; max-width:720px; margin:0 auto; }
-  main { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
-  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px; margin:0 0 20px; }
-  h2 { font-size:22px; margin:0 0 14px; color:var(--accent); }
-  h3 { font-size:18px; margin:18px 0 6px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:14px; }
-  .item { border:1px solid var(--line); border-radius:12px; padding:16px; background:#fbfdfe; }
-  .item strong { display:block; color:var(--navy); margin-bottom:4px; }
-  .meta { color:var(--sub); font-size:15px; }
-  .btn { display:inline-block; background:var(--accent); color:#fff; padding:14px 22px; border-radius:10px; text-decoration:none; font-weight:600; border:0; font-size:16px; cursor:pointer; }
-  .btn:disabled { opacity:.6; cursor:default; }
-  form label { display:block; font-weight:600; margin:14px 0 6px; }
-  form input, form select, form textarea { width:100%; padding:12px 14px; border:1px solid #c8d3da; border-radius:10px; font-size:16px; font-family:inherit; }
-  form textarea { min-height:120px; resize:vertical; }
-  .hp { position:absolute; left:-9999px; }
-  #form-msg { margin-top:12px; font-weight:600; }
-  footer { text-align:center; color:var(--sub); font-size:14px; padding:24px 20px 40px; }
-  footer a { color:var(--accent); }
+  /* ── 배경 3색 (모두 밝고 낮은 채도) ──────────────────────────
+     paper 백지 · mist 안개(연한 청록회색) · sand 미색(따뜻한 모래)
+     남색(navy)은 글자·선·버튼에만 쓰고 배경으로는 쓰지 않습니다.       */
+  :root{
+    --paper:#FAF9F6;   /* 백지 */
+    --mist:#E8EDF4;    /* 안개 : 로고 남색 계열의 아주 연한 톤 */
+    --sand:#F2ECE0;    /* 미색 : 따뜻한 중화색 */
+    --navy:#01337B;    /* 로고 남색 — 제목·버튼·강조선 */
+    --navy-deep:#002469;
+    --text:#23303F;
+    --sub:#5C6B7C;
+    --rule:#CFD6DF;
+    --wrap:52rem;
+    --narrow:41rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--paper); color:var(--text);
+    font-family:"Noto Sans KR","Pretendard","Apple SD Gothic Neo",system-ui,sans-serif;
+    font-size:17px; line-height:1.75; word-break:keep-all;
+  }
+  .wrap{max-width:var(--wrap); margin:0 auto; padding:0 22px}
+  .wrap.narrow{max-width:var(--narrow)}
+  h1,h2,h3{font-family:"Noto Serif KR",serif; font-weight:600; letter-spacing:-.01em; color:var(--navy)}
+  p{margin:0 0 1em}
+  a{color:inherit}
+
+  /* ── 상단바 : 안개 ── */
+  .topbar{background:var(--mist); color:var(--sub); font-size:14px; padding:10px 0; border-bottom:1px solid var(--rule)}
+  .topbar .wrap{display:flex; flex-wrap:wrap; gap:6px 20px; justify-content:space-between}
+  .topbar b{color:var(--navy); font-weight:700}
+
+  /* ── 히어로 : 백지 + 대표 사진을 배경처럼 ── */
+  .hero{background:var(--paper); padding:40px 0 78px; position:relative; overflow:hidden; isolation:isolate}
+  .hero-photo{position:absolute; right:0; bottom:0; top:0; width:50%; max-width:640px; z-index:-1;
+    pointer-events:none; user-select:none}
+  .hero-photo img{width:100%; height:100%; object-fit:contain; object-position:right bottom; display:block;
+    -webkit-mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.5) 30%, #000 68%);
+            mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.5) 30%, #000 68%)}
+  .hero .wrap{position:relative}
+  .hero .logo{height:98px; width:auto; display:block; margin:0 0 44px}
+  .hero-copy{max-width:33rem}
+  .hero .kicker{color:var(--navy); font-size:15px; font-weight:500; margin:0 0 12px}
+  .hero h1{font-size:clamp(28px,4.8vw,42px); line-height:1.35; margin:0}
+  .hero .rule{width:54px; height:2px; background:var(--navy); border:0; margin:24px 0 20px}
+  .hero .lead{font-size:16.5px; color:var(--sub); margin:0 0 28px}
+  .hero .credit{margin:34px 0 0; font-size:15px; color:var(--sub)}
+  .hero .credit b{font-family:"Noto Serif KR",serif; font-weight:600; font-size:16.5px; color:var(--navy)}
+  .actions{display:flex; flex-wrap:wrap; gap:12px}
+
+  /* ── 버튼 ── */
+  .btn{display:inline-block; padding:14px 24px; font-size:16px; font-weight:500; font-family:inherit;
+       line-height:1; border-radius:2px; border:1px solid transparent; cursor:pointer; text-decoration:none}
+  .btn-solid{background:var(--navy); color:#F8F6F1; font-weight:700}
+  .btn-line{background:transparent; color:var(--navy); border-color:var(--navy)}
+  .btn:disabled{opacity:.5; cursor:default}
+
+  /* ── 밴드 공통 ── */
+  .band{padding:62px 0}
+  .band h2{font-size:27px; margin:0 0 8px}
+  .band .sub{color:var(--sub); font-size:16px; margin:0 0 26px}
+  .band .h2rule{height:1px; background:var(--rule); border:0; margin:0 0 30px}
+  .bg-mist{background:var(--mist)}
+  .bg-sand{background:var(--sand)}
+  .bg-paper{background:var(--paper)}
+
+  /* ── 숫자 ── */
+  .figures{padding:40px 0}
+  .figures dl{display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin:0}
+  .figures dt{font-family:"Noto Serif KR",serif; font-size:clamp(25px,3.8vw,33px); font-weight:600; color:var(--navy); line-height:1.2}
+  .figures dd{margin:4px 0 0; font-size:15px; color:var(--sub)}
+
+  /* ── 업무분야 ── */
+  .work ul{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:0 34px}
+  .work li{padding:20px 0; border-top:1px solid var(--rule)}
+  .work b{display:block; font-family:"Noto Serif KR",serif; font-size:18px; font-weight:600; color:var(--navy); margin-bottom:4px}
+  .work span{color:var(--sub); font-size:15px; line-height:1.7}
+
+  /* ── 대표 노무사 ── */
+  .member blockquote{margin:0 0 26px; padding:0 0 0 20px; border-left:3px solid var(--navy);
+    font-family:"Noto Serif KR",serif; font-size:19px; line-height:1.8; color:var(--navy)}
+  .member ul{list-style:none; margin:0; padding:22px 0 0; border-top:1px solid var(--rule);
+    display:grid; grid-template-columns:repeat(2,1fr); gap:6px 30px; font-size:15.5px}
+  .member li{color:var(--sub); padding-left:2.6em; text-indent:-2.6em}
+  .member li em{font-style:normal; font-weight:700; color:var(--navy); display:inline-block; width:2.6em; text-indent:0}
+
+  /* ── 인사이트 ── */
+  .insights article{padding:22px 0; border-top:1px solid var(--rule)}
+  .insights article:last-child{border-bottom:1px solid var(--rule)}
+  .insights .tag{font-size:14px; color:var(--navy); font-weight:700}
+  .insights h3{font-size:19px; margin:4px 0 4px; line-height:1.5}
+  .insights .byline{font-size:14.5px; color:var(--sub); margin:0}
+
+  /* ── 자주 묻는 질문 ── */
+  .faq .qa{border-left:3px solid var(--navy); padding:2px 0 2px 20px; margin:0 0 28px; max-width:var(--narrow)}
+  .faq .qa:last-child{margin-bottom:0}
+  .faq h3{font-size:18.5px; margin:0 0 8px; line-height:1.55}
+  .faq p{margin:0; color:#3F4E52}
+
+  /* ── 상담 신청 ── */
+  .contact .quick{display:flex; flex-wrap:wrap; gap:12px; margin:0 0 32px}
+  .note{color:var(--sub); font-size:15px; margin:0 0 22px}
+  label{display:block; font-weight:500; font-size:15px; margin:20px 0 7px}
+  input,select,textarea{width:100%; padding:13px 14px; font-size:16px; line-height:1.5; font-family:inherit;
+    color:var(--text); background:#fff; border:1px solid var(--rule); border-radius:2px}
+  textarea{min-height:140px; resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--navy); outline-offset:1px; border-color:var(--navy)}
+  .agree{display:flex; gap:10px; align-items:flex-start; font-weight:400; font-size:15px; margin:22px 0 24px; color:var(--sub)}
+  .agree input{width:auto; margin:5px 0 0; accent-color:var(--navy)}
+  .hp{position:absolute; left:-9999px}
+  #form-msg{margin:16px 0 0; font-weight:500; min-height:1.6em}
+  #form-msg.ok{color:#1F5C3D}
+  #form-msg.err{color:#8C3B2E}
+
+  /* ── 푸터 ── */
+  footer{background:var(--mist); color:var(--sub); font-size:15px; padding:46px 0 54px; border-top:1px solid var(--rule)}
+  footer strong{display:block; font-family:"Noto Serif KR",serif; font-size:19px; color:var(--navy); font-weight:600; margin-bottom:12px}
+  footer a{color:var(--navy)}
+  footer .legal{margin-top:18px; padding-top:18px; border-top:1px solid var(--rule); font-size:14px; line-height:1.9}
+
+  :focus-visible{outline:2px solid var(--navy); outline-offset:2px}
+  @media (max-width:900px){
+    /* 화면이 좁아지면 사진을 글 뒤로 넣고 옅게 깝니다 */
+    .hero-photo{width:78%; opacity:.16}
+    .hero-photo img{-webkit-mask-image:linear-gradient(to right, transparent 0%, #000 55%);
+                            mask-image:linear-gradient(to right, transparent 0%, #000 55%)}
+    .hero-copy{max-width:none}
+  }
+  @media (max-width:760px){
+    .work ul{grid-template-columns:repeat(2,1fr); gap:0 26px}
+    .member ul{grid-template-columns:1fr}
+    .figures dl{grid-template-columns:repeat(2,1fr); gap:24px}
+  }
+  @media (max-width:520px){
+    .hero{padding:28px 0 52px}
+    .hero .logo{height:66px; margin-bottom:30px}
+    .band{padding:46px 0}
+    .work ul{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important; transition:none!important}}
 </style>
 </head>
 <body>
 
-<header>
-  <span class="pill">공인노무사 · 서울 마포</span>
-  <h1>홍길동 공인노무사</h1>
-  <p class="lead">임금체불, 부당해고, 산재보상, 직장 내 괴롭힘. 첫 문단에서 결론부터 말씀드립니다.</p>
+<div class="topbar">
+  <div class="wrap">
+    <span>평일 09:00 – 18:00</span>
+    <span>대표전화 <b>041-417-1915</b> · 팩스 041-417-1916</span>
+  </div>
+</div>
+
+<header class="hero">
+  <!-- 대표 사진: 오른쪽에서 배경처럼 흐려지며 들어옵니다 -->
+  <picture class="hero-photo">
+    <source srcset="assets/jeonjina.webp" type="image/webp">
+    <img src="assets/jeonjina.png" alt="전지나 대표 공인노무사" width="800" height="1054" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <img class="logo" src="assets/logo.png" alt="노무법인 전승" width="115" height="98">
+    <div class="hero-copy">
+      <p class="kicker">충남 천안 · 아산에서, 전국으로</p>
+      <h1>300여 기업이 맡기는 노무 파트너</h1>
+      <hr class="rule">
+      <p class="lead">대표 전지나 공인노무사가 기업의 인사노무 자문, 산업안전·중대재해 예방 컨설팅, 재해 근로자의 산재보상을 맡습니다. 천안·아산을 축으로 충남 중부권을 넘어 전국의 사건과 자문에 대응합니다.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="#contact">상담 문의하기</a>
+        <a class="btn btn-line" href="#work">업무분야 보기</a>
+      </div>
+      <p class="credit"><b>전지나</b> 대표 공인노무사</p>
+    </div>
+  </div>
 </header>
 
 <main>
-  <!-- AEO 원칙: 소개는 짧은 '사실 문장'으로. AI가 인용하기 쉬운 형태입니다. -->
-  <section id="about">
-    <h2>소개</h2>
-    <p><strong>홍길동</strong>은 서울 마포에서 활동하는 공인노무사로, 임금체불·부당해고·산재보상·직장 내 괴롭힘 사건을 주로 다룹니다. 노무법인 예시 소속이며, 사업주 자문과 근로자 대리를 모두 수행합니다.</p>
-    <p class="meta">자격: 공인노무사(등록번호 [제0000호]) · 경력: [00]년 · 지역: 서울 마포</p>
+  <section class="figures bg-mist">
+    <div class="wrap">
+      <dl>
+        <div><dt>2021</dt><dd>법인 설립</dd></div>
+        <div><dt>300+</dt><dd>자문 기업</dd></div>
+        <div><dt>500+</dt><dd>누적 처리 사건</dd></div>
+        <div><dt>20</dt><dd>전문 구성원</dd></div>
+      </dl>
+    </div>
   </section>
 
-  <section id="services">
-    <h2>전문 분야</h2>
-    <div class="grid">
-      <div class="item"><strong>임금체불·임금분쟁</strong><span class="meta">체불임금 산정, 진정·고소 대리, 퇴직금</span></div>
-      <div class="item"><strong>부당해고·징계</strong><span class="meta">노동위원회 구제신청, 징계 절차 자문</span></div>
-      <div class="item"><strong>산재보상</strong><span class="meta">요양·장해·유족급여 신청, 심사청구</span></div>
-      <div class="item"><strong>직장 내 괴롭힘</strong><span class="meta">신고 접수, 조사, 조사보고서, 사후조치</span></div>
+  <section class="band work bg-sand" id="work">
+    <div class="wrap">
+      <h2>업무분야</h2>
+      <p class="sub">기업 자문과 재해자 대리를 한 곳에서 맡습니다.</p>
+      <hr class="h2rule">
+      <ul>
+        <li><b>산업안전·중대재해</b><span>중대재해처벌법이 요구하는 안전보건관리체계를 세우고 반기 점검까지 관리합니다.</span></li>
+        <li><b>인사·노무 자문</b><span>취업규칙, 임금, 근로시간 등 노무 리스크를 월 자문으로 상시 관리합니다.</span></li>
+        <li><b>급여 아웃소싱</b><span>급여 계산부터 4대보험 신고, 임금명세서 발급까지 대행합니다.</span></li>
+        <li><b>사건 대리</b><span>부당해고, 임금체불 등 노동위원회·노동청 사건을 대리합니다.</span></li>
+        <li><b>괴롭힘 조사·대응</b><span>외부 조사위원으로 조사와 판단, 사후 조치와 예방까지 지원합니다.</span></li>
+        <li><b>HR컨설팅</b><span>임금체계와 평가제도를 조직의 성장 단계에 맞게 설계합니다.</span></li>
+        <li><b>위험성평가 컨설팅</b><span>법정 요건을 갖춘 현장 실사 기반 위험성평가 체계를 만듭니다.</span></li>
+        <li><b>산재보상 전문 센터</b><span>산재 신청부터 불승인 이의절차까지 재해자의 편에서 대리합니다.</span></li>
+        <li><b>교육 (출강 의뢰)</b><span>법정의무교육부터 관리자 노무 교육까지 전국 어디든 출강합니다.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band member bg-paper" id="member">
+    <div class="wrap">
+      <h2>전지나 대표 공인노무사</h2>
+      <hr class="h2rule">
+      <blockquote>산업안전은 가장 깊게, 인사노무는 가장 넓게.<br>기업 노무의 모든 순간에 전문가의 답을 드립니다.</blockquote>
+      <ul>
+        <li><em>현</em> 노무법인 전승 대표노무사</li>
+        <li><em>현</em> 충청남도 갑질 및 괴롭힘 예방 안심노무사</li>
+        <li><em>현</em> 충청남도의회 갑질 상담 조사관</li>
+        <li><em>현</em> 충청남도 민관협치 협의회 위원</li>
+        <li><em>현</em> 코레일테크(주) 고충심의위원</li>
+        <li><em>현</em> 산림청 기타 공공기관 경영평가위원</li>
+        <li><em>현</em> 충남문화관광재단 전문상담위원</li>
+        <li><em>현</em> 중소벤처기업부 비즈니스지원단 상담위원</li>
+        <li><em>현</em> 충청남도 지속가능발전협의회 위원</li>
+        <li><em>전</em> 행정안전부 산하기관 경영평가 위원</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band insights bg-mist" id="insights">
+    <div class="wrap narrow">
+      <h2>전승 인사이트</h2>
+      <p class="sub">상담에서 가장 자주 받는 질문에, 근거 조문과 함께 답합니다.</p>
+      <hr class="h2rule">
+      <article>
+        <span class="tag">인사·노무 자문</span>
+        <h3>5인 미만 사업장도 해고 예고수당을 줘야 하나요?</h3>
+        <p class="byline">2026. 08. 전지나 노무사</p>
+      </article>
+      <article>
+        <span class="tag">산업안전·중대재해</span>
+        <h3>상시근로자 5인 사업장, 중대재해처벌법 적용될까? 판단 기준 정리</h3>
+        <p class="byline">2026. 08. 전지나 노무사</p>
+      </article>
+      <article>
+        <span class="tag">산업재해 보상</span>
+        <h3>산재 불승인 통지를 받았다면 — 90일 안에 해야 할 일</h3>
+        <p class="byline">2026. 08. 전지나 노무사</p>
+      </article>
     </div>
   </section>
 
   <!-- 이 섹션의 질문·답은 위 JSON-LD FAQPage와 똑같아야 합니다(본문에 보이는 FAQ만 구조화). -->
-  <section id="faq">
-    <h2>자주 묻는 질문</h2>
-    <h3>임금체불을 당했는데 무엇부터 해야 하나요?</h3>
-    <p>먼저 근로계약서, 급여명세서, 출퇴근 기록, 미지급 내역을 모으십니다. 그 다음 사업주에게 지급을 요구한 기록(문자·메일)을 남기고, 해결되지 않으면 관할 고용노동청에 임금체불 진정을 제출합니다. 퇴직 후라면 14일이 지난 시점부터 진정이 가능합니다.</p>
-    <h3>부당해고 구제신청은 언제까지 해야 하나요?</h3>
-    <p>해고가 있었던 날부터 3개월 이내에 관할 지방노동위원회에 구제신청을 해야 합니다. 기간을 넘기면 노동위원회 구제는 어려워지므로 해고 통보를 받은 즉시 날짜를 기록해 두십시오.</p>
-    <h3>상담은 어떻게 신청하나요?</h3>
-    <p>아래 상담 신청 폼에 이름, 연락처, 상담 분야, 내용을 남기시면 영업일 기준 1일 이내에 연락드립니다. 급한 사안은 전화로 문의해 주십시오.</p>
+  <section class="band faq bg-sand" id="faq">
+    <div class="wrap">
+      <h2>자주 묻는 질문</h2>
+      <hr class="h2rule">
+      <div class="qa">
+        <h3>직원 10명 규모 회사인데, 노무사 자문이 꼭 필요한가요?</h3>
+        <p>상시근로자 5인 이상이면 근로기준법의 대부분이 적용됩니다. 해고 제한, 연장근로 한도, 연차휴가 부여 의무가 이때부터 발생합니다. 분쟁이 생긴 뒤에 드는 대응 비용은 예방 자문 비용을 크게 웃도는 경우가 많아, 10인 규모라면 월 자문으로 상시 관리하는 편이 일반적입니다.</p>
+      </div>
+      <div class="qa">
+        <h3>산재 신청은 회사가 해주는 것 아닌가요?</h3>
+        <p>아닙니다. 산재 신청의 주체는 재해를 입은 근로자 본인입니다. 회사의 동의나 확인 없이도 근로복지공단에 직접 신청할 수 있고, 회사가 협조하지 않아도 신청은 가능합니다. 다만 이런 경우에는 재해 경위를 뒷받침할 자료를 어떻게 갖추느냐가 결과를 좌우합니다.</p>
+      </div>
+      <div class="qa">
+        <h3>중대재해처벌법은 우리 회사에도 적용되나요?</h3>
+        <p>2024년 1월부터 상시근로자 5인 이상 모든 사업장으로 적용이 확대되었습니다. 업종과 관계없이 안전보건관리체계를 갖출 의무가 있으며, 이를 이행하지 않은 상태에서 중대재해가 발생하면 경영책임자가 처벌 대상이 될 수 있습니다.</p>
+      </div>
+      <div class="qa">
+        <h3>상담 비용은 어떻게 되나요?</h3>
+        <p>첫 전화 상담이나 방문 상담에서 사건의 방향과 예상 비용을 먼저 안내합니다. 자문계약과 사건위임 비용 기준은 상담 자리에서 그대로 설명드립니다.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>상담 신청</h2>
-    <p class="meta">남기신 내용은 상담 목적으로만 사용하며, 상담 종료 후 파기합니다.</p>
-    <form id="consult-form" novalidate>
-      <label for="name">이름</label>
-      <input id="name" name="name" required maxlength="40" autocomplete="name">
-      <label for="phone">연락처</label>
-      <input id="phone" name="phone" required maxlength="30" autocomplete="tel" placeholder="010-0000-0000">
-      <label for="category">상담 분야</label>
-      <select id="category" name="category">
-        <option>임금체불</option><option>부당해고·징계</option><option>산재보상</option><option>직장 내 괴롭힘</option><option>기타</option>
-      </select>
-      <label for="message">내용</label>
-      <textarea id="message" name="message" required maxlength="2000" placeholder="상황을 간단히 적어 주세요. 개인정보(주민번호 등)는 적지 마세요."></textarea>
-      <!-- 스팸봇용 함정 필드: 사람은 안 보이고 안 채움 -->
-      <input class="hp" name="website" tabindex="-1" autocomplete="off">
-      <label style="font-weight:400;margin-top:10px"><input type="checkbox" id="agree" style="width:auto;margin-right:8px"> 개인정보 수집·이용에 동의합니다 (상담 목적, 상담 종료 후 파기)</label>
-      <p><button class="btn" type="submit" id="submit-btn">상담 신청 보내기</button></p>
-      <p id="form-msg" role="status"></p>
-    </form>
+  <section class="band contact bg-paper" id="contact">
+    <div class="wrap narrow">
+      <h2>지금 상황을 말씀해 주세요</h2>
+      <p class="sub">기업 자문이든 재해자 상담이든, 첫 상담에서 가야 할 절차를 잡아드립니다.</p>
+      <hr class="h2rule">
+      <div class="quick">
+        <a class="btn btn-solid" href="tel:041-417-1915">041-417-1915 전화</a>
+        <a class="btn btn-line" href="http://pf.kakao.com/_AxmxdJn" target="_blank" rel="noopener">카카오톡 상담</a>
+      </div>
+      <p class="note">남기신 내용은 상담 목적으로만 사용하며, 상담 종료 후 파기합니다.</p>
+      <form id="consult-form" novalidate>
+        <label for="name">이름 또는 회사명</label>
+        <input id="name" name="name" required maxlength="60" autocomplete="name">
+        <label for="phone">연락처</label>
+        <input id="phone" name="phone" required maxlength="30" autocomplete="tel" placeholder="010-0000-0000">
+        <label for="category">상담 분야</label>
+        <select id="category" name="category">
+          <option>인사·노무 자문</option>
+          <option>산업안전·중대재해</option>
+          <option>산재보상</option>
+          <option>사건 대리 (부당해고·임금체불)</option>
+          <option>직장 내 괴롭힘</option>
+          <option>급여 아웃소싱·HR컨설팅</option>
+          <option>교육 출강</option>
+          <option>기타</option>
+        </select>
+        <label for="message">내용</label>
+        <textarea id="message" name="message" required maxlength="2000" placeholder="상황을 간단히 적어 주세요. 주민등록번호 등 민감한 개인정보는 적지 마세요."></textarea>
+        <!-- 스팸봇용 함정 필드: 사람은 안 보이고 안 채움 -->
+        <input class="hp" name="website" tabindex="-1" autocomplete="off">
+        <label class="agree" for="agree"><input type="checkbox" id="agree"> 개인정보 수집·이용에 동의합니다 (상담 목적, 상담 종료 후 파기)</label>
+        <button class="btn btn-solid" type="submit" id="submit-btn">상담 신청 보내기</button>
+        <p id="form-msg" role="status"></p>
+      </form>
+    </div>
   </section>
 </main>
 
 <footer>
-  노무법인 예시 · [도로명 주소] · 전화 02-000-0000 · <a href="mailto:hello@example.com">hello@example.com</a><br>
-  <a href="/posts/">글 목록</a> · <a href="/sitemap.xml">sitemap</a> · <a href="/llms.txt">llms.txt</a>
+  <div class="wrap">
+    <strong>노무법인 전승</strong>
+    충남 천안의 노무법인입니다. 기업 인사노무 자문, 산업안전·중대재해 예방 컨설팅, 재해 근로자의 산재보상을 맡고 있습니다.
+    <div class="legal">
+      충남 천안시 동남구 청수9로 1, 7층 703호 (청당동, 청오법조빌딩)<br>
+      대표 전지나 · 사업자등록번호 657-88-02118<br>
+      대표전화 <a href="tel:041-417-1915">041-417-1915</a> · 팩스 041-417-1916<br>
+      © 노무법인 전승. All rights reserved.
+    </div>
+  </div>
 </footer>
 
 <script>
@@ -192,19 +449,20 @@
   const form = document.getElementById('consult-form');
   const msg = document.getElementById('form-msg');
   const btn = document.getElementById('submit-btn');
+  const say = (text, cls) => { msg.textContent = text; msg.className = cls || ''; };
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    msg.textContent = '';
-    if (!document.getElementById('agree').checked) { msg.textContent = '개인정보 동의에 체크해 주세요.'; return; }
+    say('');
+    if (!document.getElementById('agree').checked) { say('개인정보 수집·이용에 동의해 주세요.', 'err'); return; }
     const data = Object.fromEntries(new FormData(form).entries());
-    if (!data.name || !data.phone || !data.message) { msg.textContent = '이름, 연락처, 내용은 필수입니다.'; return; }
+    if (!data.name || !data.phone || !data.message) { say('이름, 연락처, 내용을 모두 적어 주세요.', 'err'); return; }
     btn.disabled = true; btn.textContent = '보내는 중…';
     try {
       const r = await fetch('/api/contact', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
       const j = await r.json().catch(() => ({}));
-      if (r.ok && j.ok) { msg.textContent = '접수되었습니다. 곧 연락드리겠습니다.'; form.reset(); }
-      else { msg.textContent = '접수에 실패했습니다: ' + (j.error || r.status) + ' (전화로 문의해 주세요)'; }
-    } catch (err) { msg.textContent = '네트워크 오류입니다. 잠시 후 다시 시도해 주세요.'; }
+      if (r.ok && j.ok) { say('접수되었습니다. 영업일 기준 1일 이내에 연락드립니다.', 'ok'); form.reset(); }
+      else { say('접수되지 않았습니다 (' + (j.error || r.status) + '). 041-417-1915로 전화 주세요.', 'err'); }
+    } catch (err) { say('연결이 끊겼습니다. 잠시 후 다시 보내 주세요.', 'err'); }
     btn.disabled = false; btn.textContent = '상담 신청 보내기';
   });
 </script>
